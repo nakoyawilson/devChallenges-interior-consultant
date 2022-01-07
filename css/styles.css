@@ -5,6 +5,7 @@
   --white: #fff;
   --grey1: #a9a9a9;
   --grey2: #828282;
+  --yellow: #f9c043;
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Lora", serif;
   --font-tertiary: "Crimson Pro", serif;
@@ -58,7 +59,8 @@ body {
   padding: 0.5rem;
 }
 
-.mobile-nav {
+.mobile-nav,
+#mobile-navigation {
   display: none;
 }
 
@@ -89,9 +91,22 @@ body {
   font-weight: 700;
 }
 
+.nav-link:hover {
+  color: var(--yellow);
+}
+
+.active:hover {
+  color: var(--white);
+  cursor: default;
+}
+
 .menu-icon {
   fill: var(--white);
   transform: scale(1.6);
+}
+
+.menu-icon:hover {
+  cursor: pointer;
 }
 
 /* Main Section */
@@ -122,9 +137,22 @@ body {
 }
 
 .more {
+  display: inline-block;
+}
+
+.more-button {
   display: flex;
   align-items: center;
   gap: 0.875rem;
+}
+
+.more-button:hover {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.more-button:hover .arrow-icon {
+  fill: var(--yellow);
 }
 
 .more-text {
@@ -203,7 +231,7 @@ body {
 }
 
 .attribution a:hover {
-  color: var(--white);
+  color: var(--yellow);
 }
 
 /* Media Queries */
@@ -229,9 +257,63 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  #mobile-navigation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 1.37rem;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 10;
+  }
+
+  .open {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .mobile-nav-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close {
+    fill: var(--white);
+    transform: scale(1.6);
+  }
+
+  .close:hover {
+    cursor: pointer;
+  }
+
+  .mobile-nav-links {
+    margin-top: 13.37rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-nav-link {
+    display: block;
+    font-size: 1.125rem;
+    margin-left: 0;
+    margin: 0 auto 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .mobile-nav-link:first-of-type::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid var(--white);
+    width: 3.5625rem;
+    top: 1.875rem;
+    left: 1.1rem;
+  }
+
   .container {
     padding: 1.1875rem 0.75rem 1.5rem;
-    width: min(100%, 375px);
   }
 
   .header-section {
@@ -278,6 +360,11 @@ body {
     margin-right: 0;
   }
 
+  .main-image {
+    width: min(100%, 351px);
+    margin: 0 auto;
+  }
+
   .image {
     width: 100%;
     height: auto;
@@ -298,6 +385,12 @@ body {
   .designer-image {
     width: 2.286875rem;
     height: 2.286875rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: min(100%, 375px);
   }
 }
 

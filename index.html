@@ -8,24 +8,40 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="images/devchallenges.png" />
 
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Devchallenges - Interior Consultant</title>
   </head>
   <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <div class="mobile-nav-header">
+        <div class="close-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="close"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="mobile-nav-links">
+        <ul>
+          <li class="nav-link mobile-nav-link active">Home</li>
+          <li class="nav-link mobile-nav-link">Collection</li>
+          <li class="nav-link mobile-nav-link">About</li>
+          <li class="nav-link mobile-nav-link">Contact</li>
+        </ul>
+      </div>
+    </div>
     <div class="container">
       <header class="header-section">
         <div class="logo-container">
@@ -40,7 +56,7 @@
           </ul>
         </nav>
         <nav class="mobile-nav">
-          <div class="menu">
+          <div class="menu-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -64,21 +80,23 @@
             <span class="new-line">eco-services.</span>
           </p>
           <div class="more">
-            <p class="more-text">Read more</p>
-            <div class="arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#000000"
-                class="arrow-icon"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M21.65 11.65l-2.79-2.79c-.32-.32-.86-.1-.86.35V11H4c-.55 0-1 .45-1 1s.45 1 1 1h14v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7z"
-                />
-              </svg>
+            <div class="more-button">
+              <p class="more-text">Read more</p>
+              <div class="arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                  class="arrow-icon"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M21.65 11.65l-2.79-2.79c-.32-.32-.86-.1-.86.35V11H4c-.55 0-1 .45-1 1s.45 1 1 1h14v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </section>
@@ -118,5 +136,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
