@@ -29,6 +29,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
+- [Useful Links](#useful-links)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -46,6 +47,10 @@
 ## Features
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build an application to complete the given user stories.
+
+## Useful Links
+
+- [Responsive Homepage - Collab.](https://devchallenges.io/learn/tutorial/responsive-homepage) - This tutorial was helpful in creating the mobile navigation menu.
 
 ## Contact
 
