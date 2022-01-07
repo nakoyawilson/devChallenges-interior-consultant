@@ -26,35 +26,80 @@
     <title>Devchallenges - Interior Consultant</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
+    <div class="container">
+      <header class="header-section">
+        <div class="logo-container">
+          <p class="logo">This Interior</p>
+        </div>
+        <nav>
+          <ul>
+            <li class="nav-link active">Home</li>
+            <li class="nav-link">Collection</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link">Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-section">
+        <section class="main-text">
+          <h1 class="main-heading">Modern interior</h1>
+          <p class="main-paragraph">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing &
+            <span class="new-line">eco-services.</span>
+          </p>
+          <div class="more">
+            <p class="more-text">Read more</p>
+            <div class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+                class="arrow-icon"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M21.65 11.65l-2.79-2.79c-.32-.32-.86-.1-.86.35V11H4c-.55 0-1 .45-1 1s.45 1 1 1h14v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <div class="main-image">
+          <img src="images/photo1.png" alt="" class="image" />
+          <div class="info-card">
+            <div class="designer-details">
+              <div class="designer-image-container">
+                <img
+                  src="images/photo2.png"
+                  alt="Aliza Webber"
+                  class="designer-image"
+                />
+              </div>
+              <div class="designer-name-container">
+                <p class="designer-name">Aliza Webber</p>
+                <div class="job-title">Interior designer</div>
+              </div>
+            </div>
+            <div>
+              <p class="year-designed">Designed in 2020 by Aliza Webber</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p class="attribution">
+          created by
+          <a
+            href="https://devchallenges.io/portfolio/nakoyawilson"
+            target="_blank"
+            >nakoyawilson</a
           >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+          - devChallenges.io
         </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      </footer>
     </div>
   </body>
 </html>
