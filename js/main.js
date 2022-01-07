@@ -3,7 +3,6 @@ const closeButton = document.querySelector(".close-button");
 const mobileNavigation = document.querySelector("#mobile-navigation");
 
 menuButton.addEventListener("click", () => {
-  console.log("clicked");
   mobileNavigation.classList.add("open");
 });
 
