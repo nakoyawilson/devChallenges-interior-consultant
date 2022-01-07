@@ -31,13 +31,28 @@
         <div class="logo-container">
           <p class="logo">This Interior</p>
         </div>
-        <nav>
+        <nav class="desktop-nav">
           <ul>
             <li class="nav-link active">Home</li>
             <li class="nav-link">Collection</li>
             <li class="nav-link">About</li>
             <li class="nav-link">Contact</li>
           </ul>
+        </nav>
+        <nav class="mobile-nav">
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#000000"
+              class="menu-icon"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+          </div>
         </nav>
       </header>
       <main class="main-section">
@@ -68,7 +83,9 @@
           </div>
         </section>
         <div class="main-image">
-          <img src="images/photo1.png" alt="" class="image" />
+          <div class="image-container">
+            <img src="images/photo1.png" alt="" class="image" />
+          </div>
           <div class="info-card">
             <div class="designer-details">
               <div class="designer-image-container">

@@ -19,10 +19,7 @@
   box-sizing: border-box;
 }
 
-img {
-  display: inline-block;
-}
-
+img,
 svg {
   display: block;
 }
@@ -50,6 +47,7 @@ body {
   align-items: center;
   margin-bottom: 10.6875rem;
 }
+
 .logo {
   font-family: var(--font-tertiary);
   font-weight: 200;
@@ -58,6 +56,10 @@ body {
   text-transform: uppercase;
   border: 1px solid var(--white);
   padding: 0.5rem;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .nav-link {
@@ -85,6 +87,11 @@ body {
 
 .active {
   font-weight: 700;
+}
+
+.menu-icon {
+  fill: var(--white);
+  transform: scale(1.6);
 }
 
 /* Main Section */
@@ -153,6 +160,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.1875rem;
+  margin-bottom: 1.5625rem;
 }
 
 .designer-image {
@@ -202,5 +210,106 @@ body {
 @media screen and (max-width: 1400px) {
   .main-text {
     margin: auto 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: min(100%, 46.0625rem);
+    padding: 2.625rem 0 1.5rem;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .main-text {
+    margin-bottom: 2.3125rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 1.1875rem 0.75rem 1.5rem;
+    width: min(100%, 375px);
+  }
+
+  .header-section {
+    margin-bottom: 2.375rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .main-section {
+    margin-bottom: 9rem;
+  }
+
+  .main-heading {
+    font-size: 2.25rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  .main-paragraph,
+  .more-text {
+    font-size: 0.875rem;
+  }
+
+  .main-paragraph {
+    margin-bottom: 1.5625rem;
+    width: min(95%, 15.625rem);
+  }
+
+  .designer-name {
+    font-size: 0.75rem;
+  }
+
+  .job-title {
+    font-size: 0.625rem;
+  }
+
+  .year-designed {
+    font-size: 1.125rem;
+    margin-right: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-card {
+    top: 13.3125rem;
+    left: 2.5rem;
+    width: 18.75rem;
+    height: 8.625rem;
+    padding: 0.823125rem 4.4375rem 0 1.1875rem;
+  }
+
+  .designer-details {
+    margin-bottom: 1.14rem;
+  }
+
+  .designer-image {
+    width: 2.286875rem;
+    height: 2.286875rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .main-section {
+    margin-bottom: 3.8125rem;
+  }
+
+  .info-card {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0.823125rem 1.1875rem;
   }
 }
